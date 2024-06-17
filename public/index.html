@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Fighting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pet Fighting Game</h1>
+        <div>
+            <label for="pet">Choose a pet:</label>
+            <select id="pet">
+                <option value="pig">Pig</option>
+                <option value="dragon">Dragon</option>
+                <option value="chicken">Chicken</option>
+                <option value="frog">Frog</option>
+                <option value="eagle">Eagle</option>
+            </select>
+        </div>
+        <div>
+            <label for="type">Choose a type:</label>
+            <select id="type">
+                <option value="fire">Fire</option>
+                <option value="amethyst">Amethyst</option>
+                <option value="crystal">Crystal</option>
+                <option value="air">Air</option>
+                <option value="water">Water</option>
+            </select>
+        </div>
+        <button id="fightButton">Fight!</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+      </html>
